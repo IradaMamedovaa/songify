@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "utils/constants/i18n/i18n-config";
 
 import App from "./App";
 
