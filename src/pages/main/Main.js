@@ -10,10 +10,12 @@ import "./Main.scss";
 const Main = () => {
   return (
     <div className="Main">
-      <Header />
       <Sidebar />
-      <Outlet />
       <Player />
+      <main>
+        <Header />
+        <Outlet />
+      </main>
     </div>
   );
 };

@@ -1,0 +1,16 @@
+@import "src/assets/styles/map";
+
+.Main {
+  display: grid;
+  padding: map-get($gaps, "panel");
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "left-sidebar    main-view         right-sidebar"
+    "now-playing-bar now-playing-bar now-playing-bar";
+}
+
+main {
+  background: blue;
+  grid-area: main-view;
+}

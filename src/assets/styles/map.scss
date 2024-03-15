@@ -1,0 +1,17 @@
+@use "sass:map";
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+$font-sizes: (
+  "small": 1.4rem,
+  "medium": 1.6rem,
+  "large": 3.2rem,
+);
+
+$gaps: (
+  "panel": 8px,
+);
