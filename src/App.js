@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { ROUTE_NAMES } from "utils/constants/routes";
-import Main from "pages/main/Main";
+import MainLayout from "pages/main-layout/MainLayout";
 import Home from "pages/home/Home";
 import Search from "pages/search/Search";
 import Playlist from "pages/playlist/Playlist";
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route element={<Main />}>
+          <Route element={<MainLayout />}>
             <Route path={ROUTE_NAMES.home} element={<Home />} />
             <Route path={ROUTE_NAMES.search} element={<Search />} />
             <Route path={ROUTE_NAMES.playlist} element={<Playlist />} />

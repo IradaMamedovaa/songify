@@ -1,12 +1,13 @@
 @import "src/assets/styles/map";
 
-.Main {
+.MainLayout {
   display: grid;
   padding: map-get($gaps, "panel");
+  gap: map-get($gaps, "panel");
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas:
-    "left-sidebar    main-view         right-sidebar"
+    "left-sidebar main-view right-sidebar"
     "now-playing-bar now-playing-bar now-playing-bar";
 }
 

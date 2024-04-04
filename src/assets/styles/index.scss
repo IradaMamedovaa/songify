@@ -1,3 +1,5 @@
+@import "src/assets/styles/map";
+
 html {
   font-size: 62.5%; //this means, font-size: 10px (62.5% of 16px)
 }
@@ -6,4 +8,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; //prevent appearance blue highlight on click
+}
+
+.App {
+  background: map-get($main-colors, "black");
 }

@@ -4,20 +4,22 @@ import { Outlet } from "react-router-dom";
 import Header from "components/header/Header";
 import Sidebar from "components/sidebar/Sidebar";
 import Player from "components/player/Player";
+import FooterMain from "components/footer-main/FooterMain";
 
-import "./Main.scss";
+import "./MainLayout.scss";
 
-const Main = () => {
+const MainLayout = () => {
   return (
-    <div className="Main">
+    <div className="MainLayout">
       <Sidebar />
       <Player />
-      <main>
+      <main className={"MainSection"}>
         <Header />
         <Outlet />
+        <FooterMain />
       </main>
     </div>
   );
 };
 
-export default Main;
+export default MainLayout;
