@@ -4,3 +4,8 @@
   border: 1px dotted aqua;
   margin-bottom: 10px;
 }
+
+ul{
+  max-height: 400px;
+  overflow: scroll;
+}
