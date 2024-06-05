@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import { changeLanguage } from "i18next";
 
 import { LANGUAGES } from "utils/constants/languages";
@@ -7,7 +6,6 @@ import { LANGUAGES } from "utils/constants/languages";
 import "./Header.scss";
 
 const Header = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="Header">

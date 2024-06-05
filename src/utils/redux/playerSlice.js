@@ -14,7 +14,7 @@ export const playerSlice = createSlice({
     },
     setTrack: (state, action) => {
       const track = action.payload;
-      return { isPlaying: true, track };
+      return { ...state, isPlaying: true, track };
     },
   },
 });

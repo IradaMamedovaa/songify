@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -9,10 +9,6 @@ import "./Player.scss";
 const Player = () => {
   const { isPlaying, track } = useSelector((state) => state.player);
   const dispatch = useDispatch();
-
-  console.log("track: ", track);
-
-  console.log(isPlaying);
 
   const handlePlayPause = () => {
     dispatch(setIsPlaying());
