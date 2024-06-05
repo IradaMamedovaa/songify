@@ -2,3 +2,6 @@
   background: red;
   grid-area: now-playing-bar;
 }
+.VideoWrapper {
+  pointer-events: none !important;
+}
