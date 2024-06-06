@@ -1,11 +1,15 @@
-import instance from "utils/api/youtube/axios";
+import youtubeApi from "utils/api/youtube/axios";
 
-export const searchYouTube = async (artistName, songName) => {
-  const response = await instance.get(
-    `search?part=id,snippet&q=${artistName}+${songName}`
-  );
-
+export const searchYouTube = async (query, limit=10) => {
+  const response = await youtubeApi.get('search', {
+    params: {
+      part: 'id,snippet',
+      q: query,
+      maxResults: limit,
+    },
+  });
   return response.data
+
 };
 
 //get video id
